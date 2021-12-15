@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1545891711480867701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545891711480867698}
+  - component: {fileID: 1545891711480867699}
+  m_Layer: 0
+  m_Name: BubbleShield
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1545891711480867698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545891711480867701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1545891712680462035}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1545891711480867699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545891711480867701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd8d86595763f94daac6164947fd7ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  isSpriteDependedonRotation: 0
+  isRotationControlledByTransform: 1
+  sp: {fileID: 0}
+  leftSprite: {fileID: 0}
+  rightSprite: {fileID: 0}
+  upSprite: {fileID: 0}
+  downSprite: {fileID: 0}
+--- !u!1 &1545891712680462034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545891712680462035}
+  - component: {fileID: 1545891712680462032}
+  - component: {fileID: 3911285767611182713}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1545891712680462035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545891712680462034}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1545891711480867698}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!212 &1545891712680462032
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545891712680462034}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1537146027
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5542943860394628541, guid: 703e9439b7847a244985dc783cf1510b,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &3911285767611182713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545891712680462034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5bc638fe063464680b6b59e9171927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPlayOneShotAnimation:
+    m_PersistentCalls:
+      m_Calls: []
+  spriteArr:
+  - {fileID: 5542943860394628541, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -5125994265881329875, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 137216567537761024, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 3914624472377988181, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -2397452766510782762, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -7886921052137534571, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 8902536085798203150, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -8138793979593303630, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 6790067363068942789, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -5469848889052296390, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 1850501317659137024, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 2922068363977210117, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 6250859077780697252, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 1850666116054788066, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: 7616272679124748145, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -1336465004216959953, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -179146802334315626, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  - {fileID: -4527159215505912176, guid: 703e9439b7847a244985dc783cf1510b, type: 3}
+  spriteRenderer: {fileID: 1545891712680462032}
+  animationDuration: 1.14
+  temp: 0
+  IsLoopComplete: 0
+  playonAwakeWithLoop: 0
+  playonAwakeOneShot: 1
+  spriteIndexToShowCache: 0
+  playingOneShot: 0

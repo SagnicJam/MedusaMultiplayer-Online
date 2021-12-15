@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7419684338956542673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6653186265766112796}
+  - component: {fileID: 4448740768726595940}
+  - component: {fileID: 490409003049013614}
+  m_Layer: 0
+  m_Name: ServerSideGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6653186265766112796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419684338956542673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4448740768726595940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419684338956542673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3afa70b8205a84248a52841ddb4baca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPositions:
+  - {x: 3.5, y: 6.5, z: 0}
+  - {x: -3.5, y: 6.5, z: 0}
+  - {x: -3.5, y: -0.5, z: 0}
+  - {x: 3.5, y: -0.5, z: 0}
+  worldDestructionTickRate: 1500
+  maxItemCount: 5
+  itemSpawnTickRate: 300
+  cereberausHeadSwitchTickRate: 200
+  timeToStartMatch: 1200
+  stopWorldDestructionTimeCount: 300
+  toNetworkTileType: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d00000013000000
+  itemTilesType: 04000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f0000002000000021000000220000002300000024000000260000002700000028000000290000002a0000002b0000002c0000002d000000
+  snapShotsInOnePacket: 4
+  packetHistorySize: 3
+  worldDestructionStop: 0
+  liveWorldDestructionTickCountTemp: 0
+  liveStopWorldDestructionTimeCount: 0
+  liveItemSpawnCountTemp: 0
+  liveCereberausHeadSwitchTickRateTemp: 0
+  serverWorldSequenceNumber: 0
+  currentGameState: 0
+  xWorldDeathSize: 0
+  yWorldDeathSize: 0
+  serverInstancePlayer: {fileID: 984921492705243653, guid: 0ab42de9fd7acb549a69d0766495b6b2,
+    type: 3}
+--- !u!114 &490409003049013614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419684338956542673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab759cf7ad1ac54ea476c6863da4f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
