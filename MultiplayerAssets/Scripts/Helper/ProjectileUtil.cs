@@ -399,12 +399,8 @@ namespace MedusaMultiplayer
             }
             else if (pU.projectileTypeThrown == EnumData.Projectiles.FireBall)
             {
-                GridManager.instance.Disperse(dispersedGO
-                    , dispersionRadius
-                    , dispersionSpeed
-                    , pU.ownerId
-                    , GridManager.instance.grid.WorldToCell(transform.position));
-                Destroy(gameObject);
+                DestroyProjectile();
+                return;
             }
             else if (pU.projectileTypeThrown == EnumData.Projectiles.FireBallMirrorKnight)
             {
@@ -414,6 +410,7 @@ namespace MedusaMultiplayer
                     , pU.ownerId
                     , GridManager.instance.grid.WorldToCell(transform.position));
                 Destroy(gameObject);
+                return;
             }
             else if (pU.projectileTypeThrown == EnumData.Projectiles.MightyWindMirrorKnight)
             {
@@ -431,6 +428,7 @@ namespace MedusaMultiplayer
                             else
                             {
                                 pU.EndOfUse();
+                                return;
                             }
                         }
                     }
@@ -452,6 +450,7 @@ namespace MedusaMultiplayer
                             else
                             {
                                 pU.EndOfUse();
+                                return;
                             }
                         }
                     }
@@ -474,6 +473,7 @@ namespace MedusaMultiplayer
                             else
                             {
                                 pU.EndOfUse();
+                                return;
                             }
                         }
                     }
@@ -552,9 +552,9 @@ namespace MedusaMultiplayer
                 {
                     if (pU.actorUsing != null)
                     {
-                        if (pU.actorUsing is Hero serverHero)
+                        if (pU.actorUsing is Hero hero)
                         {
-                            serverHero.fireballUsedCount++;
+                            hero.fireballUsedCount++;
                         }
                     }
                 }

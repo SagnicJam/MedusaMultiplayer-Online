@@ -350,6 +350,7 @@ namespace MedusaMultiplayer
 
         public void Disperse(GameObject dispersedGO, float dispersionRadius, float dispersionSpeed, int ownerId, Vector3Int dispersePoint)
         {
+            Debug.Log("disperse here");
             //List<Vector3Int> vList = new List<Vector3Int>();
             Vector3 dispersedPoint = cellToworld(dispersePoint);
 
